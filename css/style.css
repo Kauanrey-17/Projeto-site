@@ -1,0 +1,725 @@
+
+@media (min-width: 768px) and (max-width: 3000px)
+{
+  @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  font-family: "Anonymous Pro", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  background-size: cover;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.logo {
+  width: 198px;
+  height: 40px;
+}
+
+.background
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 27.73%; 
+}
+banner-container {
+  width: 100%;
+  height: 400px;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #5c0068;
+  text-decoration: underline;
+}
+
+nav {
+  box-shadow: 2px gray;
+  text-decoration: none;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  gap: 40px;
+  font-size: 18px;
+  color: white;
+  z-index: 2;
+  color: black;
+}
+#lanc2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 42%;
+  margin-top: 50px;
+  margin-bottom: 0;
+  background-color: #93a8be;
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+#lanc {
+  position: absolute;
+  width: 100%;
+  height: 790px;
+  background-image: url(../img/back_pg1.webp);
+  background-size: 100%;
+}
+
+.lanc_img {
+  margin-left: 3.5%;
+  width: 20%;
+  border-radius: 50px;
+  background-color: #19102a;
+  margin-top: 5%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.lanc_img img {
+  width: 90%;
+  height: 300px;
+  border-radius: 50px;
+  padding: 2px;
+  backdrop-filter: blur(10px);
+}
+
+.lanc_h3 {
+  margin-bottom: 7px;
+}
+
+#esportivas_container {
+  color: white;
+  position: relative;
+  float: left;
+  font-size: 190%;
+  margin-top: 55%;
+  margin-left: 58%;
+}
+
+#esportivas img {
+  margin-top: 35%;
+  position: absolute;
+}
+
+#carrossel1 h1 {
+  color: white;
+}
+
+#voltar {
+  position: fixed;
+  top: 29%;
+  margin-top: 30%;
+  left: 47%;
+  margin-left: 47%;
+  color: white;
+}
+
+#img_car {
+  position: relative;
+  padding: 2.5%;
+  width: 65%;
+  height: 560px;
+  background-color: #170c2a;
+  font-size: 40px;
+  color: white;
+  margin-top: 25%;
+  margin-left: 17.5%;
+  border-radius: 50px;
+}
+#img_car p {
+  display: inline-flex;
+  align-items: center;
+  font-size: 30px;
+}
+.txt_car p {
+  float: right;
+  position: absolute;
+  top: 200px;
+  left: 540px;
+  font-size: 18px;
+}
+#casuais {
+  position: relative;
+  margin-left: 20px;
+}
+#casuais img {
+  margin-top: 10%;
+  width: 680px;
+  height: 1012px;
+}
+#casuais h1 {
+  position: absolute;
+  color: white;
+  top: 250px;
+  left: 900px;
+  font-size: 70px;
+  margin: 20px;
+  gap: 20px;
+}
+#txt2_2 {
+  margin: 20px;
+  gap: 20px;
+}
+
+#car_cas {
+  position: relative;
+  padding: 2.5%;
+  width: 65%;
+  height: 560px;
+  background-color: #170c2a;
+  font-size: 40px;
+  color: white;
+  margin-top: 1720px;
+  margin-left: 17.5%;
+  border-radius: 50px;
+}
+h2 {
+  color: white;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#img_sslide
+	{
+			height:70%; 
+			width:100%;
+			border-radius:20px;
+			box-shadow:2px 4px 12px 3px rgb(100,100,100);
+	}
+	  
+#carrossel
+	{
+			height:350px; /*altura fixa*/
+			width:100%;
+	}
+	  
+#botoes_slide
+	{
+			margin-left:27%;
+			font-family:Arial;
+			font-size:2.4vw;
+            display:inline;
+	}
+
+#botoes_slide span
+  {
+			font-size:1.8vw;
+            border:2px solid rgb(0,0,0);
+			border-radius:40%;
+			cursor:pointer;
+  }
+
+@media (max-width: 450px){
+    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    font-family: "Anonymous Pro", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    background-size: 100%;
+
+}
+
+header {
+    position: relative;
+    height: 20%;
+    width: 100%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; 
+}
+
+.logo {
+    width: 198px;
+    height: 40px;
+}
+
+.banner-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 1; 
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: #5c0068;
+    text-decoration: underline;
+}
+
+nav {
+    box-shadow: 2px gray;
+    text-decoration: none;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    gap: 40px; 
+    font-size: 18px;
+    color: white;
+    z-index: 2; 
+    color: black;
+
+}
+#lanc2{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 42%;
+    margin-top: 80px;
+    margin-bottom: 0;
+    background-color: #93A8BE;
+    width: 20%;
+    height: 50px;
+    border-radius: 20px;
+}
+#lanc {
+    display: inline-flex;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-image: url(../img/back_pg1.webp);
+    background-size: 100%;
+}
+
+
+.lanc_img {
+    border-radius: 50px;
+    background-color: #19102A;
+    margin-left: 5%;
+    margin-top: 10%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    aspect-ratio: 1 / 0.7;
+}
+
+.lanc_img img {
+    border-radius: 50px;
+    padding: 2px;
+    width: 10%;
+    height: 15%;
+    backdrop-filter: blur(10px);
+
+}
+
+.lanc_h3{
+    margin-bottom: 7px;
+}
+
+#esportivas_container{
+    color: white;
+    position: relative;
+    float: left;
+    font-size: 55px;
+    margin-top: 55%;
+    margin-left: 58%;
+}
+
+#esportivas img{
+    margin-top: 42%;
+    position: absolute;
+}
+
+#carrossel1 h1{
+    color: white;
+}
+
+
+#voltar{
+    position: fixed;
+    top: 29%;
+    margin-top: 30%;
+    left: 47%;
+    margin-left: 47%;
+    color: white;
+}
+
+#car_esp{
+    position: relative;
+    padding: 2.5%;
+    width: 1100px;
+    height: 560px;
+    background-color: #170C2A;
+    font-size: 40px;
+    color: white;
+    margin-top:1720px;
+    margin-left: 400px;
+    border-radius: 50px;
+}
+#car_esp p{
+    display: inline-flex;
+    align-items: center;
+    font-size: 23px;
+}
+.txt_car{
+    float: right;
+    position: absolute;
+    top: 200px;
+    left: 540px;
+    font-size: 10px;
+}
+
+}
+#casuais{
+    position: relative;
+    margin-left: 20px;
+}
+#casuais img{
+    margin-top: 20px;
+    width:680px; 
+    height:1012px;
+}
+#casuais h1 {
+    position: absolute;
+    color: white;
+    top: 250px;
+    left: 900px;
+    font-size: 70px;
+    margin: 20px;
+    gap: 20px;
+}
+#txt2_2{
+    margin: 20px;
+    gap: 20px;
+}
+
+#car_cas{
+    position: relative;
+    padding: 2.5%;
+    width: 1100px;
+    height: 560px;
+    background-color: #170C2A;
+    font-size: 40px;
+    color: white;
+    margin-top:20px;
+    margin-left: 400px;
+    border-radius: 50px;
+}
+h2{
+    color: white;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+}
+
+
+/* celulares */
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    * {
+        font-family: "Anonymous Pro", monospace;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    
+    body{
+        background-color: black;
+        background-size: 100%;
+        display: none;
+    
+    }
+    
+    header {
+        position: relative;
+        height: 20%;
+        width: 100%;
+    }
+    
+    .logo-container {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2; 
+    }
+    
+    .logo {
+        width: 198px;
+        height: 40px;
+    }
+    
+    .banner-container {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        z-index: 1; 
+    }
+    
+    .banner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    nav a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    nav a:hover{
+        color: #5c0068;
+        text-decoration: underline;
+    }
+    
+    nav {
+        box-shadow: 2px gray;
+        text-decoration: none;
+        position: absolute;
+        bottom: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-flex;
+        gap: 40px; 
+        font-size: 18px;
+        color: white;
+        z-index: 2; 
+        color: black;
+    
+    }
+    #lanc2{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-left: 42%;
+        margin-top: 80px;
+        margin-bottom: 0;
+        background-color: #93A8BE;
+        width: 300px;
+        height: 50px;
+        border-radius: 20px;
+    }
+    #lanc {
+        display: inline-flex;
+        position: absolute;
+        width: 100%;
+        height: 10%px;
+        background-image: url(../img/back_pg1.webp);
+        background-size: 100%;
+    }
+    
+    
+    .lanc_img {
+        border-radius: 50px;
+        background-color: #19102A;
+        margin-left: 5%;
+        margin-top: 10%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        aspect-ratio: 1 / 0.7;
+    }
+    
+    .lanc_img img {
+        border-radius: 50px;
+        padding: 2px;
+        width: 15%;
+        height: 15%;
+        backdrop-filter: blur(10px);
+    
+    }
+    
+    .lanc_h3{
+        margin-bottom: 7px;
+    }
+    
+    #esportivas_container{
+        color: white;
+        position: relative;
+        float: left;
+        font-size: 55px;
+        margin-top: 55%;
+        margin-left: 58%;
+    }
+    
+    #esportivas img{
+        margin-top: 42%;
+        position: absolute;
+    }
+    
+    #carrossel1 h1{
+        color: white;
+    }
+    
+    
+    #voltar{
+        position: fixed;
+        top: 29%;
+        margin-top: 30%;
+        left: 47%;
+        margin-left: 47%;
+        color: white;
+    }
+    
+    #car_esp{
+        position: relative;
+        padding: 2.5%;
+        width: 1100px;
+        height: 560px;
+        background-color: #170C2A;
+        font-size: 40px;
+        color: white;
+        margin-top:1720px;
+        margin-left: 400px;
+        border-radius: 50px;
+    }
+    #car_esp p{
+        display: inline-flex;
+        align-items: center;
+        font-size: 23px;
+    }
+    .txt_car{
+        float: right;
+        position: absolute;
+        top: 200px;
+        left: 540px;
+        font-size: 10px;
+    }
+    
+    }
+    #casuais{
+        position: relative;
+        margin-left: 20px;
+    }
+    #casuais img{
+        margin-top: 20px;
+        width:680px; 
+        height:1012px;
+    }
+    #casuais h1 {
+        position: absolute;
+        color: white;
+        top: 250px;
+        left: 900px;
+        font-size: 70px;
+        margin: 20px;
+        gap: 20px;
+    }
+    #txt2_2{
+        margin: 20px;
+        gap: 20px;
+    }
+    
+    #car_cas
+    {
+        position: relative;
+        padding: 2.5%;
+        width: 1100px;
+        height: 560px;
+        background-color: #170C2A;
+        font-size: 40px;
+        color: white;
+        margin-top:20px;
+        margin-left: 400px;
+        border-radius: 50px;
+    }
+    h2
+    {
+        color: white;
+    }
+    
+    footer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+/* Tablets */
+
+@media (min-width: 768px) and (max-width: 1440px)
+{
+
+}
+/* Computador*/
+
+@media (orientation: landscape)
+{
+
+}

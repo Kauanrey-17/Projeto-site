@@ -1,0 +1,107 @@
+<!doctype HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+	<meta name="author" content="Eu"/>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale:1.0"/>
+	<title>exemplo de slide show</title>
+	<style type="text/css">
+		#img_sslide
+		{
+			height:70%; 
+			width:100%;
+			border-radius:20px;
+			box-shadow:2px 4px 12px 3px rgb(100,100,100);
+		}
+	  
+		#carrossel
+		{
+			height:350px; //altura fixa
+			width:100%;
+		}
+	  
+		#botoes_slide
+		{
+			margin-left:27%;
+			font-family:Arial;
+			font-size:2.4vw;
+            display:inline;
+		}
+
+        #botoes_slide span
+        {
+			font-size:1.8vw;
+            border:2px solid rgb(0,0,0);
+			border-radius:40%;
+			cursor:pointer;
+        }
+	</style>
+  </head>
+  <body>
+   	<section id="carrossel">
+		<img id="img_sslide" src="cachoeira300.jpeg" name="slide"/>
+		<div id="botoes_slide">
+			<span id="v1" onClick="Muda(1)">&nbsp;&nbsp;&nbsp;</span>&nbsp;Cachoeira
+			<span id="v2" onClick="Muda(2)">&nbsp;&nbsp;&nbsp;</span>&nbsp;Montanhas
+			<span id="v3" onClick="Muda(3)">&nbsp;&nbsp;&nbsp;</span>&nbsp;Raio de Sol
+        </div>
+	</section>
+	
+    <script language="JavaScript">
+		let a;
+		var contador = 1; //variável pública criada fora da function
+		var img1="cachoeira300.jpeg";
+		var img2="montanhass300.jpeg";
+		var img3="raio_de_sol299.jpeg";
+		var tempo=2000; //2000(milessegundos) : 1000 (milessegundo) = 2s
+		var exibir=setInterval("Exibindo()",tempo);
+		 // Inicia o looping trocando imagens de 2s em 2s
+	  
+		function Exibindo() 
+		{  
+			document.images["slide"].src=eval("img"+contador); 
+			
+            if (contador==1)
+                {
+                document.getElementById("v1").style.backgroundColor="#ff0000";
+				document.getElementById("v1").style.boxShadow="0px 0px 5px 5px #dd0000";
+                document.getElementById("v2").style.backgroundColor="#ffffff";
+				document.getElementById("v2").style.boxShadow="0px 0px 5px 5px #ffffff";
+                document.getElementById("v3").style.backgroundColor="#ffffff";
+				document.getElementById("v3").style.boxShadow="0px 0px 5px 5px #ffffff";
+                }
+            else if (contador==2)
+                {
+                document.getElementById("v1").style.backgroundColor="#ffffff";
+				document.getElementById("v1").style.boxShadow="0px 0px 5px 5px #ffffff";
+                document.getElementById("v2").style.backgroundColor="#ff0000";
+				document.getElementById("v2").style.boxShadow="2px 2px 5px 5px #dd0000";
+                document.getElementById("v3").style.backgroundColor="#ffffff";
+				document.getElementById("v3").style.boxShadow="0px 0px 5px 5px #ffffff";
+                }
+            else
+                {
+                document.getElementById("v1").style.backgroundColor="#ffffff";
+				document.getElementById("v1").style.boxShadow="0px 0px 5px 5px #ffffff";
+                document.getElementById("v2").style.backgroundColor="#ffffff";
+				document.getElementById("v2").style.boxShadow="0px 0px 5px 5px #ffffff";
+                document.getElementById("v3").style.backgroundColor="#ff0000";
+				document.getElementById("v3").style.boxShadow="2px 2px 5px 5px #dd0000";  
+                }
+				  
+			if (contador<3)
+				contador++; /*contador=contador+1;*/
+			else
+				contador=1;
+		}
+				
+	 	function Muda(x)
+		{
+			clearInterval(exibir);//interrompe o que está rodando no setInterval
+			contador=x;
+			exibir=setInterval("Exibindo()",tempo); //recomeçar o looping
+		}
+    </script> 
+  </body>
+</html>
+   

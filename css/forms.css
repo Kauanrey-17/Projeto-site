@@ -1,0 +1,63 @@
+body
+{
+    background-image: url(../IMAGENS/Fundo-Cardápio-Pizza-escuro.jpg);
+    background-size: 100%;
+}
+header
+{
+    background-color:rgb(0, 0,0);
+    font-size: 27px;
+    
+
+}
+.Container
+{
+    border: 2px solid  rgba(255, 255, 255);
+    backdrop-filter: blur(10px); 
+    background-color:  rgba(255, 207, 136, 0.493);
+    width: 100%;
+    margin-left: 35%;
+}
+h3
+{
+    color: rgb(252, 252, 252);
+    text-align: center;
+    align-items: center;
+    font-family: Arial;
+}
+div
+{
+    font-family: Arial;
+    color: rgb(252, 252, 252);
+    font-size: 20PX;
+    margin-left: 4%;
+}
+textarea
+{
+    resize: none;
+    width: 50%;
+    margin-left: 23%;
+}
+.legend
+{
+    color: rgb(252, 252, 252);
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    width: 30%;
+    margin-left: 35%;
+    background-color: black;
+}
+.mens
+{
+    width: 20%;
+    font-size: 90%;
+}
+
+.botao
+{
+    margin-left: 35%;
+    width: 27%;
+    font-size: 120%;
+}
